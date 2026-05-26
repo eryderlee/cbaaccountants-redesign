@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CB Accountants — Practical. Personal. Powerful.</title>
+<meta name="description" content="Australian-registered tax agent and IPA member. BAS, tax, and advisory for sole traders, families, and growing small businesses. Free 15-minute initial chat.">
+<link rel="canonical" href="https://cbaccountants.com.au/">
+<meta name="theme-color" content="#001A4A">
+<meta name="format-detection" content="telephone=yes">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cbaccountants.com.au/">
+<meta property="og:site_name" content="CB Accountants">
+<meta property="og:title" content="CB Accountants — Practical accounting. Personal service. Powerful results.">
+<meta property="og:description" content="Australian-registered tax agent and IPA member. BAS, tax, and advisory for sole traders, families, and growing small businesses.">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CB Accountants — Practical accounting. Personal service. Powerful results.">
+<meta name="twitter:description" content="Australian-registered tax agent and IPA member. BAS, tax, and advisory.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "CB Accountants",
+  "url": "https://cbaccountants.com.au/",
+  "telephone": "+61434223300",
+  "email": "admin@cbaccountants.com.au",
+  "description": "Australian-registered tax agent and IPA member. BAS, tax, and advisory for sole traders, families, and growing small businesses.",
+  "areaServed": { "@type": "Country", "name": "Australia" },
+  "address": { "@type": "PostalAddress", "addressCountry": "AU" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
+  "priceRange": "$$",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"></noscript>
+
+<style>
+/* =========================================================
+   TOKENS — derived solely from CB logo
+   ========================================================= */
+:root {
+  --ink-1: #001A4A;
+  --ink-2: #28365A;
+  --ink-3: #6B7793;
+  --ink-line: rgba(0, 26, 74, 0.10);
+  --ink-line-strong: rgba(0, 26, 74, 0.18);
+
+  --paper-1: #F1F4F9;
+  --paper-2: #E6ECF3;
+  --paper-3: #DEE5EE;
+  --paper-white: #FFFFFF;
+
+  --accent-1: #3B6FDB;
+  --accent-2: #2553B8;
+  --accent-3: #7CA1E8;
+  --accent-tint: rgba(59, 111, 219, 0.10);
+
+  --font-display: "Geist", "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px;
+  --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+  --section-y: clamp(72px, 8vw, 128px);
+  --gutter:    clamp(20px, 4vw, 40px);
+  --max-w:     1280px;
+
+  --fs-eyebrow: clamp(11px, 0.5vw + 9px, 12px);
+  --fs-body:    clamp(15px, 0.3vw + 14px, 17px);
+  --fs-lead:    clamp(18px, 0.6vw + 16px, 22px);
+  --fs-h3:      clamp(22px, 1.3vw + 18px, 30px);
+  --fs-h2:      clamp(32px, 2.6vw + 22px, 56px);
+  --fs-h1:      clamp(44px, 5.5vw + 20px, 104px);
+
+  --r-1: 8px; --r-2: 12px; --r-3: 18px; --r-pill: 999px;
+
+  --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-snap: cubic-bezier(0.32, 0.72, 0, 1);
+  --t-fast: 180ms; --t-med: 360ms; --t-slow: 720ms;
+
+  --header-h: 72px;
+}
+@media (max-width: 720px) { :root { --header-h: 60px; } }
+
+/* =========================================================
+   RESET
+   ========================================================= */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--ink-2);
+  background: var(--paper-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+img, svg, video { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; border: 0; background: transparent; cursor: pointer; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent-1); outline-offset: 3px; border-radius: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link {
+  position: absolute; top: -100px; left: 16px; z-index: 200;
+  background: white; color: var(--ink-1); padding: 12px 16px;
+  border-radius: var(--r-1); font-weight: 600;
+  transition: top var(--t-med) var(--ease-out);
+}
+.skip-link:focus { top: 16px; }
+.container { width: min(100% - var(--gutter)*2, var(--max-w)); margin-inline: auto; }
+
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink-1); font-weight: 600; letter-spacing: -0.014em; line-height: 1.06; margin: 0; }
+h1 { font-size: var(--fs-h1); letter-spacing: -0.032em; line-height: 0.98; font-weight: 600; }
+h2 { font-size: var(--fs-h2); letter-spacing: -0.022em; line-height: 1.06; }
+h3 { font-size: var(--fs-h3); letter-spacing: -0.012em; line-height: 1.15; }
+p { margin: 0; }
+.lead { font-size: var(--fs-lead); line-height: 1.55; color: var(--ink-2); }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-3);
+  font-weight: 500;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content: ""; width: 16px; height: 1px; background: currentColor; opacity: 0.6; }
+.eyebrow.on-dark { color: var(--accent-3); }
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 22px;
+  font-family: var(--font-display); font-weight: 500;
+  font-size: 15px; letter-spacing: -0.005em;
+  border-radius: var(--r-pill);
+  transition: transform var(--t-med) var(--ease-out),
+              background-color var(--t-med) var(--ease-out),
+              color var(--t-med) var(--ease-out),
+              box-shadow var(--t-med) var(--ease-out);
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--ink-1); color: var(--paper-1); }
+.btn-primary:hover { background: var(--accent-2); }
+.btn-primary.on-dark { background: white; color: var(--ink-1); }
+.btn-primary.on-dark:hover { background: var(--accent-3); color: var(--ink-1); }
+.btn-accent { background: var(--accent-1); color: white; box-shadow: 0 1px 0 rgba(255,255,255,0.18) inset, 0 6px 22px -8px rgba(59,111,219,0.5); }
+.btn-accent:hover { background: var(--accent-2); }
+.btn-ghost { background: transparent; color: var(--ink-1); border: 1px solid var(--ink-line-strong); }
+.btn-ghost:hover { background: var(--paper-2); }
+.btn-ghost.on-dark { color: white; border-color: rgba(255,255,255,0.22); }
+.btn-ghost.on-dark:hover { background: rgba(255,255,255,0.08); }
+.btn .arrow { transition: transform var(--t-med) var(--ease-out); }
+.btn:hover .arrow { transform: translateX(3px); }
+
+/* =========================================================
+   HEADER (dark hero context by default, glass on scroll)
+   ========================================================= */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--header-h);
+  display: flex; align-items: center;
+  transition: background-color var(--t-med) var(--ease-out),
+              backdrop-filter var(--t-med) var(--ease-out),
+              border-color var(--t-med) var(--ease-out),
+              color var(--t-med) var(--ease-out);
+  border-bottom: 1px solid transparent;
+  color: white; /* default — on dark hero */
+}
+.header.is-scrolled {
+  background: rgba(241, 244, 249, 0.82);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom-color: var(--ink-line);
+  color: var(--ink-1);
+}
+.header__inner {
+  width: min(100% - var(--gutter)*2, var(--max-w));
+  margin-inline: auto;
+  display: flex; align-items: center; gap: var(--space-6);
+}
+.brand {
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--font-display); font-weight: 600;
+  color: inherit;
+  letter-spacing: -0.015em; font-size: 17px;
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .brand { font-size: 15px; gap: 9px; }
+  .brand__mark { width: 30px; height: 30px; }
+}
+.brand__mark {
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border-radius: 9px;
+  background: white;
+  padding: 4px;
+  flex-shrink: 0;
+  transition: background var(--t-med) var(--ease-out),
+              box-shadow var(--t-med) var(--ease-out),
+              padding var(--t-med) var(--ease-out);
+}
+.brand__mark img { width: 100%; height: 100%; object-fit: contain; }
+.header.is-scrolled .brand__mark { background: transparent; padding: 0; }
+.nav { display: flex; align-items: center; gap: 28px; margin-left: auto; }
+.nav a {
+  font-size: 14.5px; color: inherit;
+  font-weight: 500;
+  transition: color var(--t-fast) var(--ease-out), opacity var(--t-fast) var(--ease-out);
+  position: relative; opacity: 0.85;
+}
+.nav a:hover { opacity: 1; }
+.nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -6px;
+  height: 1px; background: var(--accent-3);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform var(--t-med) var(--ease-out);
+}
+.header.is-scrolled .nav a::after { background: var(--accent-1); }
+.nav a:hover::after { transform: scaleX(1); }
+.header__cta { display: flex; align-items: center; gap: 12px; }
+.header__phone {
+  font-family: var(--font-mono);
+  font-size: 14px; color: inherit; opacity: 0.78;
+  font-weight: 500;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.header__phone svg { width: 14px; height: 14px; opacity: 0.8; }
+
+.hamburger {
+  display: none;
+  width: 40px; height: 40px;
+  border-radius: var(--r-1);
+  align-items: center; justify-content: center;
+  position: relative; z-index: 110;
+  margin-left: 8px;
+}
+.hamburger span {
+  position: absolute; left: 9px; right: 9px;
+  height: 1.5px; background: currentColor;
+  border-radius: 2px;
+  transition: transform var(--t-med) var(--ease-out),
+              opacity var(--t-fast) var(--ease-out),
+              top var(--t-med) var(--ease-out);
+}
+.hamburger span:nth-child(1) { top: 14px; }
+.hamburger span:nth-child(2) { top: 19px; }
+.hamburger span:nth-child(3) { top: 24px; }
+body.drawer-open .hamburger span:nth-child(1) { top: 19px; transform: rotate(45deg); }
+body.drawer-open .hamburger span:nth-child(2) { opacity: 0; }
+body.drawer-open .hamburger span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
+
+.mobile-call {
+  display: none;
+  width: 40px; height: 40px;
+  border-radius: var(--r-pill);
+  background: rgba(255,255,255,0.12);
+  color: white;
+  align-items: center; justify-content: center;
+}
+.mobile-call svg { width: 16px; height: 16px; }
+.header.is-scrolled .mobile-call { background: var(--accent-tint); color: var(--accent-2); }
+
+.btn-mobile {
+  display: none;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  background: white;
+  color: var(--ink-1);
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+@media (max-width: 940px) {
+  .nav, .header__phone, .header__cta .btn-accent { display: none; }
+  .hamburger, .mobile-call, .btn-mobile { display: inline-flex; }
+}
+
+/* Drawer */
+.drawer-backdrop {
+  position: fixed; inset: 0; z-index: 95;
+  background: rgba(0, 26, 74, 0.36);
+  backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none;
+  transition: opacity var(--t-med) var(--ease-out);
+}
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 105;
+  width: min(380px, 90vw);
+  background: var(--paper-1);
+  border-left: 1px solid var(--ink-line);
+  transform: translateX(100%);
+  transition: transform var(--t-med) var(--ease-snap);
+  display: flex; flex-direction: column;
+  padding: calc(var(--header-h) + 16px) var(--space-5) var(--space-5);
+  color: var(--ink-1);
+}
+body.drawer-open .drawer { transform: translateX(0); }
+body.drawer-open .drawer-backdrop { opacity: 1; pointer-events: auto; }
+body.drawer-open { overflow: hidden; }
+.drawer__nav { display: flex; flex-direction: column; gap: 2px; margin-top: 12px; }
+.drawer__nav a {
+  font-family: var(--font-display);
+  font-size: 22px; color: var(--ink-1);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ink-line);
+  font-weight: 500; letter-spacing: -0.012em;
+}
+.drawer__cta {
+  margin-top: auto;
+  display: flex; flex-direction: column; gap: 12px;
+  padding-top: var(--space-5);
+}
+.drawer__cta a:first-child { background: var(--ink-1); color: var(--paper-1); padding: 16px; text-align: center; border-radius: var(--r-pill); font-weight: 500; font-family: var(--font-display); }
+.drawer__cta .phone {
+  font-family: var(--font-mono); text-align: center;
+  color: var(--ink-2); font-size: 14px;
+}
+.drawer__cta .phone strong { display: block; font-size: 18px; color: var(--ink-1); margin-top: 2px; }
+
+/* =========================================================
+   HERO — CINEMATIC FULL-BLEED NAVY
+   ========================================================= */
+.hero {
+  position: relative;
+  background: var(--ink-1);
+  color: white;
+  padding-top: calc(var(--header-h) + clamp(24px, 3vw, 56px));
+  padding-bottom: clamp(48px, 6vw, 88px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+/* base linear gradient — static dark backdrop */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background: linear-gradient(180deg, #001433 0%, #001A4A 50%, #051E55 100%);
+}
+/* floating radial glows on their own layer so they can drift independently */
+.hero__glow {
+  position: absolute; inset: -20% -20%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 45% at 78% 8%, rgba(59,111,219,0.55), transparent 65%),
+    radial-gradient(ellipse 50% 75% at -5% 95%, rgba(124,161,232,0.40), transparent 65%);
+  animation: glow-drift 14s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@keyframes glow-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1);             opacity: 1; }
+  25%      { transform: translate3d(7%, -5%, 0) scale(1.12);        opacity: 1.1; }
+  50%      { transform: translate3d(-5%, 6%, 0) scale(0.92);        opacity: 0.85; }
+  75%      { transform: translate3d(-8%, -3%, 0) scale(1.08);       opacity: 1.05; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__glow { animation: none; }
+}
+/* grid overlay */
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.038) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.038) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, black, transparent 85%);
+}
+/* grain layer */
+.hero__grain {
+  position: absolute; inset: 0; z-index: -1;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='7'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.085 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+  mix-blend-mode: screen;
+  opacity: 0.75;
+  pointer-events: none;
+}
+/* 2-column hero grid — copy left, services card right.
+   Uses much wider container than the rest of the page so the hero "breathes". */
+.hero__inner {
+  position: relative; z-index: 2;
+  width: min(100% - var(--gutter)*2, 1640px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(340px, 0.7fr);
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .hero__inner { grid-template-columns: 1fr; gap: 36px; }
+}
+
+/* Services / "What we help with" card — double navy outline with white gap,
+   directly mirroring the logo's rounded-square frame. */
+.hero__card {
+  position: relative;
+  background: var(--paper-white);
+  border: 2.5px solid var(--ink-1);
+  border-radius: 22px;
+  padding: 36px 32px 28px;
+  /* Layered box-shadow:
+     1) 5px white gap around the border
+     2) 2.5px navy outer ring
+     3) soft drop shadow below */
+  box-shadow:
+    0 0 0 5px white,
+    0 0 0 7.5px var(--ink-1),
+    0 26px 60px -24px rgba(0, 26, 74, 0.55),
+    0 8px 20px -12px rgba(0, 26, 74, 0.3);
+  color: var(--ink-1);
+  width: 100%;
+  align-self: center;
+  margin: 8px; /* room for the outer ring so it isn't clipped */
+}
+.hero__card-eyebrow {
+  position: absolute;
+  top: -14px;
+  left: 28px;
+  background: var(--ink-1);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--r-pill);
+  box-shadow: 0 6px 18px -8px rgba(0, 26, 74, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero__card-eyebrow svg { width: 13px; height: 13px; }
+.hero__card h2 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 1vw + 18px, 28px);
+  font-weight: 600;
+  color: var(--ink-1);
+  letter-spacing: -0.014em;
+  line-height: 1.2;
+  margin: 8px 0 22px;
+}
+.hero__card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: flex; flex-direction: column;
+  gap: 14px;
+}
+.hero__card-list li {
+  display: flex; align-items: center; gap: 14px;
+  font-size: 15.5px;
+  color: var(--ink-2);
+  font-weight: 400;
+  line-height: 1.35;
+}
+.hero__card-list li .check {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  border-radius: 8px;
+  background: var(--ink-1);
+  color: white;
+  display: grid; place-items: center;
+}
+.hero__card-list li .check svg { width: 13px; height: 13px; stroke-width: 2.4; }
+.hero__card-cta {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 22px;
+  background: var(--ink-1);
+  color: white;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 15.5px;
+  letter-spacing: -0.005em;
+  transition: transform var(--t-med) var(--ease-out), background var(--t-med) var(--ease-out);
+}
+.hero__card-cta:hover { background: var(--accent-2); transform: translateY(-1px); }
+.hero__card-cta .arrow { transition: transform var(--t-med) var(--ease-out); }
+.hero__card-cta:hover .arrow { transform: translateX(3px); }
+.hero__card-micro {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--ink-3);
+  font-weight: 400;
+  margin-top: 14px;
+}
+.hero__card-micro strong { color: var(--ink-2); font-weight: 500; }
+.hero__eyebrow {
+  color: var(--accent-3);
+  margin-bottom: clamp(18px, 2vw, 28px);
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+.hero__eyebrow::before { content: ""; width: 20px; height: 1px; background: currentColor; opacity: 0.55; }
+.hero h1 {
+  color: white;
+  max-width: 14ch;
+  margin-bottom: clamp(24px, 3vw, 36px);
+}
+.hero h1 em { font-style: normal; color: var(--accent-3); }
+.hero__lead {
+  font-size: clamp(16px, 0.4vw + 14px, 19px);
+  line-height: 1.5;
+  color: rgba(255,255,255,0.78);
+  max-width: 52ch;
+  margin-bottom: clamp(24px, 3vw, 36px);
+  font-weight: 400;
+}
+.hero__cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.hero__cta-row .btn-accent { padding: 16px 26px; font-size: 16px; }
+.hero__trust {
+  margin-top: clamp(28px, 3.5vw, 48px);
+  display: flex; flex-wrap: wrap;
+  gap: 12px 28px;
+  align-items: center;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+.hero__trust .item {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero__trust .item strong { color: white; font-weight: 600; letter-spacing: 0.04em; }
+.hero__trust .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent-3); flex-shrink: 0; }
+
+@media (max-width: 720px) {
+  .hero h1 { max-width: none; }
+  .hero__lead { max-width: none; }
+  .hero__cta-row { flex-direction: column; align-items: stretch; }
+  .hero__cta-row .btn { justify-content: center; }
+  .hero__trust { gap: 12px 24px; }
+}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+.section { padding: var(--section-y) 0; position: relative; }
+.section__head { max-width: 720px; margin-bottom: clamp(40px, 6vw, 72px); }
+.section__head .eyebrow { margin-bottom: 18px; }
+.section__head h2 { margin-bottom: 18px; }
+.section__head .lead { color: var(--ink-2); }
+.section--dark { background: var(--ink-1); color: rgba(255,255,255,0.78); }
+.section--dark h2, .section--dark h3 { color: white; }
+.section--dark .lead { color: rgba(255,255,255,0.78); }
+.section--paper2 { background: var(--paper-2); }
+
+/* =========================================================
+   HOW IT WORKS
+   ========================================================= */
+/* Side decoration + hero bleed band on the how-it-works section */
+#how { position: relative; overflow: hidden; }
+/* Hero bleed: faint dark-navy gradient that fades from the top of the section
+   so the transition from the cinematic dark hero feels continuous */
+#how::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 240px;
+  background: linear-gradient(180deg,
+    rgba(0, 26, 74, 0.10) 0%,
+    rgba(0, 26, 74, 0.04) 35%,
+    transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+/* Side decoration: faint dashed circle on the right */
+#how::after {
+  content: "";
+  position: absolute;
+  top: 14%; right: -8%;
+  width: 280px; height: 280px;
+  border: 1px dashed var(--ink-line-strong);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+#how .container { position: relative; z-index: 1; }
+
+.howitworks__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--ink-line);
+  position: relative;
+}
+/* Animated progress line across the top — fills as the section enters view */
+.howitworks__grid::after {
+  content: "";
+  position: absolute;
+  top: -1px; left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--ink-1);
+  transition: width 1600ms var(--ease-out);
+  transition-delay: 200ms;
+}
+.howitworks__grid.is-in::after { width: 100%; }
+.step {
+  padding: 36px 32px 32px 0;
+  border-right: 1px solid var(--ink-line);
+  position: relative;
+}
+.step:last-child { border-right: 0; padding-right: 0; }
+.step:not(:first-child) { padding-left: 32px; }
+.step__num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent-2);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+/* Marker dots — sit exactly at the start of each column (on top of the vertical hairline + horizontal line intersection) */
+.step::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;          /* centers the 14px dot on column boundary (border) */
+  width: 14px; height: 14px;
+  background: var(--paper-1);
+  border: 2px solid var(--ink-1);
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0; transform: scale(0.4);
+  transition: opacity 320ms var(--ease-out), transform 320ms var(--ease-out);
+}
+.step:first-child::before { left: -7px; }    /* sits at grid left edge */
+/* Timing: line covers grid in ~1600ms starting at +200ms. Dot at 0% pops first,
+   then dot at ~33% (after line reaches it), then dot at ~66%. Final dot sits at 100%. */
+.howitworks__grid.is-in .step:nth-child(1)::before { transition-delay: 240ms; }   /* line just starts */
+.howitworks__grid.is-in .step:nth-child(2)::before { transition-delay: 760ms; }   /* line at ~33% */
+.howitworks__grid.is-in .step:nth-child(3)::before { transition-delay: 1280ms; }  /* line at ~66% */
+.howitworks__grid.is-in::before { opacity: 1; transform: scale(1); }
+/* Final dot at the right end of the line */
+.howitworks__grid::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 14px; height: 14px;
+  background: var(--ink-1);
+  border-radius: 50%;
+  z-index: 2;
+  opacity: 0; transform: scale(0.4);
+  transition: opacity 320ms var(--ease-out), transform 320ms var(--ease-out);
+  transition-delay: 1800ms;
+}
+.howitworks__grid.is-in .step::before { opacity: 1; transform: scale(1); }
+.step h3 { margin-bottom: 12px; }
+.step p { color: var(--ink-2); max-width: 32ch; }
+@media (max-width: 820px) {
+  .howitworks__grid { grid-template-columns: 1fr; }
+  .step { border-right: 0; border-bottom: 1px solid var(--ink-line); padding: 28px 0; }
+  .step:not(:first-child) { padding-left: 0; }
+  .step:last-child { border-bottom: 0; }
+  .step::before, .howitworks__grid::after, .howitworks__grid::before { display: none; }
+  #how::after { display: none; }
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--ink-line);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--r-3);
+  overflow: hidden;
+}
+.service {
+  background: var(--paper-1);
+  padding: 28px 26px 26px;
+  display: flex; flex-direction: column; gap: 14px;
+  transition: background var(--t-med) var(--ease-out);
+  cursor: pointer;
+}
+.service:hover { background: var(--paper-white); }
+.service .ico { width: 36px; height: 36px; color: var(--accent-2); margin-bottom: 6px; }
+.service .ico svg { width: 100%; height: 100%; }
+.service h3 { font-size: 17px; letter-spacing: -0.005em; line-height: 1.25; }
+.service p { font-size: 14.5px; color: var(--ink-3); line-height: 1.5; margin: 0; }
+.service .more {
+  margin-top: auto;
+  padding-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+  display: inline-flex; align-items: center; gap: 6px;
+  font-weight: 500;
+  opacity: 0; transform: translateY(2px);
+  transition: opacity var(--t-med) var(--ease-out), transform var(--t-med) var(--ease-out);
+}
+.service:hover .more { opacity: 1; transform: translateY(0); }
+@media (max-width: 1080px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .services__grid { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   AUDIENCES (2x2 mosaic)
+   ========================================================= */
+.audiences__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.aud-tile {
+  position: relative;
+  padding: clamp(28px, 3vw, 40px);
+  border-radius: var(--r-3);
+  background: var(--paper-2);
+  border: 1px solid var(--ink-line);
+  display: flex; flex-direction: column;
+  min-height: 240px;
+  transition: transform var(--t-med) var(--ease-out), box-shadow var(--t-med) var(--ease-out);
+  overflow: hidden;
+}
+.aud-tile:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -22px rgba(0, 26, 74, 0.25); }
+.aud-tile__ico {
+  position: absolute;
+  top: clamp(24px, 2.5vw, 32px);
+  right: clamp(24px, 2.5vw, 32px);
+  width: 40px; height: 40px;
+  border-radius: 11px;
+  background: var(--ink-1);
+  color: white;
+  display: grid; place-items: center;
+  transition: transform var(--t-med) var(--ease-out);
+}
+.aud-tile__ico svg { width: 18px; height: 18px; }
+.aud-tile:hover .aud-tile__ico { transform: rotate(-6deg) scale(1.05); }
+.aud-tile--feature .aud-tile__ico { background: rgba(255,255,255,0.10); color: var(--accent-3); }
+.aud-tile .eyebrow { margin-bottom: 14px; }
+.aud-tile h3 { margin-bottom: 10px; font-size: clamp(22px, 1.4vw + 18px, 30px); }
+.aud-tile p { color: var(--ink-2); max-width: 38ch; }
+.aud-tile--feature {
+  background: var(--ink-1);
+  border-color: transparent;
+  color: white;
+  grid-column: span 1;
+  background-image:
+    radial-gradient(circle at 80% 0%, rgba(59,111,219,0.30), transparent 50%),
+    linear-gradient(160deg, #051A4A, #001433);
+}
+.aud-tile--feature h3, .aud-tile--feature .quote { color: white; }
+.aud-tile--feature .quote {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 1.6vw + 16px, 30px);
+  line-height: 1.25;
+  letter-spacing: -0.018em;
+  font-weight: 500;
+  margin-top: auto;
+}
+.aud-tile--feature .attr {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-3);
+  margin-top: 14px;
+}
+@media (max-width: 720px) { .audiences__grid { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   WHY US (manifesto)
+   ========================================================= */
+.whyus__statements {
+  display: grid; gap: 1px;
+  background: rgba(255,255,255,0.10);
+  border-top: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+.statement {
+  background: var(--ink-1);
+  padding: clamp(28px, 4vw, 48px) 0;
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1.6fr) minmax(180px, 0.8fr);
+  gap: clamp(20px, 4vw, 56px);
+  align-items: center;
+}
+.statement__num {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 3.5vw + 16px, 64px);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent-3);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  line-height: 1;
+}
+.statement__text {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 1.8vw + 14px, 38px);
+  line-height: 1.2; letter-spacing: -0.018em;
+  color: white; font-weight: 500;
+  max-width: 22ch;
+}
+.statement__text em { font-style: normal; color: var(--accent-3); }
+.statement__proof {
+  border-left: 1px solid rgba(255,255,255,0.14);
+  padding-left: clamp(20px, 2vw, 28px);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.statement__proof-num {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 1.5vw + 18px, 40px);
+  color: var(--accent-3);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1;
+}
+.statement__proof-label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+@media (max-width: 820px) {
+  .statement {
+    grid-template-columns: 60px 1fr;
+    gap: 16px 24px;
+  }
+  .statement__proof {
+    grid-column: 1 / -1;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,0.14);
+    padding-left: 0;
+    padding-top: 14px;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .statement__proof-num { font-size: 22px; }
+  .statement__text { max-width: none; }
+}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+.testi__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.testi {
+  background: var(--paper-white);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--r-3);
+  padding: 32px 28px 24px;
+  display: flex; flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-med) var(--ease-out), box-shadow var(--t-med) var(--ease-out);
+}
+.testi:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -20px rgba(0, 26, 74, 0.32); }
+.testi__stars { color: var(--accent-1); font-size: 13px; letter-spacing: 0.1em; margin-bottom: 14px; position: relative; z-index: 1; }
+.testi__quote {
+  font-family: var(--font-display);
+  font-size: 19px; line-height: 1.4;
+  letter-spacing: -0.005em; color: var(--ink-1);
+  font-weight: 400; margin-bottom: 22px; flex: 1;
+  position: relative; z-index: 1;
+}
+.testi__attr {
+  display: flex; align-items: center; gap: 12px;
+  border-top: 1px solid var(--ink-line);
+  padding-top: 16px;
+  position: relative; z-index: 1;
+}
+.testi__avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--ink-1);
+  color: white;
+  display: grid; place-items: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.testi__attr-info {
+  display: flex; flex-direction: column; gap: 2px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.testi__attr-info strong { color: var(--ink-1); font-weight: 600; letter-spacing: 0.04em; }
+.testi__placeholder {
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(181, 103, 11, 0.12); color: #8A4F08;
+  font-family: var(--font-mono); font-size: 10px;
+  padding: 3px 8px; border-radius: var(--r-1);
+  text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+  z-index: 2;
+}
+@media (max-width: 940px) { .testi__grid { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+.about__portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--paper-3), var(--paper-2));
+  border: 2.5px solid var(--ink-1);
+  /* Double-navy outline with white gap — echoes the hero card + logo frame */
+  box-shadow:
+    0 0 0 5px white,
+    0 0 0 7.5px var(--ink-1),
+    0 26px 60px -24px rgba(0, 26, 74, 0.4);
+  margin: 8px;
+}
+.about__portrait img { width: 100%; height: 100%; object-fit: cover; }
+.about__portrait .placeholder {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  color: var(--ink-3);
+  font-family: var(--font-mono); font-size: 12px;
+  text-align: center; padding: 20px;
+}
+.about__signature {
+  margin-top: 24px;
+  display: flex; align-items: center; gap: 14px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--ink-3);
+  font-style: italic;
+  padding-top: 18px;
+  border-top: 1px dashed var(--ink-line-strong);
+}
+.about__signature strong {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--ink-1);
+  font-size: 16px;
+}
+.about__chips { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  background: var(--paper-2);
+  border: 1px solid var(--ink-line);
+  font-family: var(--font-mono);
+  font-size: 12px; color: var(--ink-2);
+  letter-spacing: 0.04em; font-weight: 500;
+}
+.chip .ico { width: 12px; height: 12px; color: var(--accent-2); }
+@media (max-width: 820px) { .about__grid { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   INSIGHTS (latest articles)
+   ========================================================= */
+.insights__head {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 24px;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+.insights__head .section__head { margin-bottom: 0; max-width: 620px; }
+.insights__viewall {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--ink-1);
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 18px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--ink-line-strong);
+  background: white;
+  transition: background var(--t-fast) var(--ease-out), transform var(--t-med) var(--ease-out);
+  white-space: nowrap;
+}
+.insights__viewall:hover { background: var(--paper-2); transform: translateY(-1px); }
+.insights__viewall .arrow { transition: transform var(--t-med) var(--ease-out); }
+.insights__viewall:hover .arrow { transform: translateX(3px); }
+.insights__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 1080px) {
+  .insights__grid { grid-template-columns: 1fr 1fr; }
+}
+.article-card {
+  position: relative;
+  background: white;
+  border: 1px solid var(--ink-line);
+  border-radius: var(--r-3);
+  padding: 28px 26px 26px;
+  display: flex; flex-direction: column;
+  gap: 18px;
+  transition: transform var(--t-med) var(--ease-out),
+              border-color var(--t-med) var(--ease-out),
+              box-shadow var(--t-med) var(--ease-out);
+  cursor: pointer;
+  color: inherit;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--ink-line-strong);
+  box-shadow: 0 16px 40px -22px rgba(0, 26, 74, 0.35);
+}
+.article-card__meta {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+.article-card__tag {
+  background: var(--accent-tint);
+  color: var(--accent-2);
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.article-card h3 {
+  font-size: clamp(18px, 0.6vw + 16px, 21px);
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  color: var(--ink-1);
+  font-weight: 600;
+  margin: 0;
+}
+.article-card__excerpt {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-3);
+  margin: 0;
+  flex: 1;
+}
+.article-card__more {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  color: var(--accent-2);
+  font-weight: 500;
+  margin-top: auto;
+}
+.article-card__more .arrow { transition: transform var(--t-med) var(--ease-out); }
+.article-card:hover .article-card__more .arrow { transform: translateX(3px); }
+.article-card__placeholder {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(181, 103, 11, 0.12); color: #8A4F08;
+  font-family: var(--font-mono); font-size: 10px;
+  padding: 3px 8px; border-radius: var(--r-1);
+  text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;
+}
+/* Featured article — bigger title, navy ink, fills more visual space */
+.article-card--featured {
+  background: var(--ink-1);
+  color: white;
+  border-color: transparent;
+  padding: 36px 32px 32px;
+  background-image:
+    radial-gradient(ellipse 50% 70% at 100% 0%, rgba(59,111,219,0.32), transparent 65%),
+    linear-gradient(160deg, #051A4A, #001433);
+}
+.article-card--featured:hover { background: var(--ink-1); }
+.article-card--featured .article-card__meta { color: rgba(255,255,255,0.55); }
+.article-card--featured .article-card__tag {
+  background: rgba(124,161,232,0.18);
+  color: var(--accent-3);
+}
+.article-card--featured h3 {
+  font-size: clamp(22px, 1.4vw + 14px, 30px);
+  color: white;
+  letter-spacing: -0.016em;
+}
+.article-card--featured .article-card__excerpt {
+  color: rgba(255,255,255,0.7);
+  font-size: 15.5px;
+}
+.article-card--featured .article-card__more { color: var(--accent-3); }
+@media (max-width: 940px) {
+  .insights__grid { grid-template-columns: 1fr; }
+  .insights__head { flex-direction: column; align-items: flex-start; }
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+.final-cta {
+  background: var(--ink-1);
+  padding: clamp(64px, 9vw, 128px) 0;
+  position: relative; overflow: hidden; color: white;
+}
+.final-cta::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 80% 30%, rgba(59,111,219,0.25), transparent 50%);
+  pointer-events: none;
+}
+.final-cta__inner {
+  position: relative;
+  width: min(100% - var(--gutter)*2, 880px);
+  margin-inline: auto; text-align: center;
+}
+.final-cta h2 {
+  color: white;
+  font-size: clamp(40px, 5vw + 16px, 80px);
+  line-height: 1.0; letter-spacing: -0.025em;
+  margin-bottom: 24px;
+}
+.final-cta .lead {
+  color: rgba(255,255,255,0.72);
+  max-width: 52ch; margin-inline: auto; margin-bottom: 36px;
+}
+.final-cta__row { display: inline-flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.final-cta .micro {
+  margin-top: 32px;
+  font-family: var(--font-mono); font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+  background: var(--paper-1);
+  border-top: 1px solid var(--ink-line);
+  padding: clamp(56px, 6vw, 80px) 0 32px;
+  color: var(--ink-2);
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 48px; margin-bottom: 48px;
+}
+.footer__brand .brand { margin-bottom: 16px; color: var(--ink-1); }
+.footer__brand .brand__mark { background: transparent; padding: 0; }
+.footer__brand p { font-size: 14.5px; color: var(--ink-3); max-width: 32ch; line-height: 1.55; }
+.footer__col h4 {
+  font-family: var(--font-mono);
+  font-size: 11.5px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--ink-3);
+  margin-bottom: 18px; font-weight: 500;
+}
+.footer__col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.footer__col a { font-size: 14.5px; color: var(--ink-2); transition: color var(--t-fast) var(--ease-out); }
+.footer__col a:hover { color: var(--ink-1); }
+.footer__bottom {
+  border-top: 1px solid var(--ink-line);
+  padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px; color: var(--ink-3); letter-spacing: 0.04em;
+}
+@media (max-width: 820px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .footer__grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   REVEAL ANIMATIONS
+   ========================================================= */
+[data-reveal] {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity var(--t-slow) var(--ease-out),
+              transform var(--t-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal].is-in { opacity: 1; transform: translateY(0); }
+[data-reveal-children] > * {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity var(--t-slow) var(--ease-out),
+              transform var(--t-slow) var(--ease-out);
+}
+[data-reveal-children].is-in > * { opacity: 1; transform: translateY(0); }
+[data-reveal-children].is-in > *:nth-child(1) { transition-delay: 0ms; }
+[data-reveal-children].is-in > *:nth-child(2) { transition-delay: 95ms; }
+[data-reveal-children].is-in > *:nth-child(3) { transition-delay: 190ms; }
+[data-reveal-children].is-in > *:nth-child(4) { transition-delay: 285ms; }
+[data-reveal-children].is-in > *:nth-child(5) { transition-delay: 380ms; }
+[data-reveal-children].is-in > *:nth-child(6) { transition-delay: 475ms; }
+[data-reveal-children].is-in > *:nth-child(7) { transition-delay: 570ms; }
+[data-reveal-children].is-in > *:nth-child(8) { transition-delay: 665ms; }
+
+/* Heading letter reveal */
+.h-reveal { display: inline-block; }
+.h-reveal .word {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.18em;
+  margin-right: 0.27em;
+  vertical-align: top;
+}
+.h-reveal .word.is-last { margin-right: 0; }
+.h-reveal .letter {
+  display: inline-block;
+  transform: translateY(115%);
+  transition: transform 720ms var(--ease-out);
+}
+.h-reveal.is-in .letter { transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0ms !important; transition-duration: 0ms !important; }
+  [data-reveal], [data-reveal-children] > *, .h-reveal .letter { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#content">Skip to content</a>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="/" class="brand" aria-label="CB Accountants — home">
+      <span class="brand__mark" aria-hidden="true">
+        <img src="cb-logo.png" alt="" width="32" height="32">
+      </span>
+      <span>CB Accountants</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#why">Why us</a>
+      <a href="#about">About</a>
+      <a href="#insights">Insights</a>
+      <a href="book.html">Contact</a>
+    </nav>
+    <div class="header__cta">
+      <a href="tel:+61434223300" class="header__phone" aria-label="Call 0434 223 300">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0434 223 300
+      </a>
+      <a href="book.html" class="btn btn-accent">Book a chat <span class="arrow">→</span></a>
+      <a href="tel:+61434223300" class="mobile-call" aria-label="Call 0434 223 300">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="book.html" class="btn-mobile">Book</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="drawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Drawer -->
+<div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <nav class="drawer__nav">
+    <a href="#services">Services</a>
+    <a href="#how">How it works</a>
+    <a href="#why">Why us</a>
+    <a href="#about">About</a>
+    <a href="#insights">Insights</a>
+    <a href="book.html">Contact</a>
+  </nav>
+  <div class="drawer__cta">
+    <a href="book.html">Book a chat</a>
+    <div class="phone">Or call us<strong>0434 223 300</strong></div>
+  </div>
+</aside>
+
+<main id="content">
+
+<!-- =========================================================
+     HERO — CINEMATIC FULL-BLEED NAVY
+     ========================================================= -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <span class="hero__eyebrow" data-reveal>Australian Registered Tax Agent · IPA Member</span>
+      <h1 id="hero-h" class="h-reveal" data-h-reveal>Practical accountants. <em>Personal</em> service.</h1>
+      <p class="hero__lead" data-reveal style="--reveal-delay: 280ms">
+        BAS, tax, bookkeeping, and advisory for sole traders, families, and growing small businesses — handled by a registered tax agent who picks up the phone.
+      </p>
+      <div class="hero__cta-row" data-reveal style="--reveal-delay: 440ms">
+        <a href="book.html" class="btn btn-accent">Book a free 15-min chat <span class="arrow">→</span></a>
+        <a href="tel:+61434223300" class="btn btn-ghost on-dark">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Or call 0434 223 300
+        </a>
+      </div>
+      <div class="hero__trust" data-reveal style="--reveal-delay: 600ms">
+        <span class="item"><span class="dot"></span><strong>Tax Agent</strong> #26303323</span>
+        <span class="item"><span class="dot"></span><strong>IPA</strong> Member</span>
+        <span class="item"><span class="dot"></span><strong>Xero</strong> Certified</span>
+        <span class="item"><span class="dot"></span><strong>4.9★</strong> Google</span>
+        <span class="item"><span class="dot"></span>Serving <strong>Australia-wide</strong></span>
+      </div>
+    </div>
+
+    <aside class="hero__card" data-reveal style="--reveal-delay: 200ms" aria-label="What we help with">
+      <span class="hero__card-eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v7c0 5 3.5 9 8 10 4.5-1 8-5 8-10V5z"/></svg>
+        Registered Tax Agent
+      </span>
+      <h2>What can we help with?</h2>
+      <ul class="hero__card-list">
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          Individual & business tax returns
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          BAS preparation & lodgement
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          Bookkeeping (Xero, MYOB)
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          Business advisory & planning
+        </li>
+        <li>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          GST, ABN & business registrations
+        </li>
+      </ul>
+      <a href="book.html" class="hero__card-cta">Book a free chat <span class="arrow">→</span></a>
+      <p class="hero__card-micro"><strong>Free 15-min initial chat</strong> · No obligation</p>
+    </aside>
+  </div>
+</section>
+
+<!-- =========================================================
+     HOW IT WORKS
+     ========================================================= -->
+<section class="section" id="how" aria-labelledby="how-h">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">How it works</span>
+      <h2 id="how-h">Three steps. Zero jargon.</h2>
+      <p class="lead">Most accountants make you feel like you should already know the answer. We start by asking the right questions, then handle the rest while you get on with your work.</p>
+    </div>
+    <div class="howitworks__grid" data-reveal>
+      <div class="step">
+        <div class="step__num">01 — Book a chat</div>
+        <h3>Tell us what's on your plate</h3>
+        <p>A free 15-minute call. We listen, ask, and figure out what you actually need — not what we want to sell.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">02 — We dig in</div>
+        <h3>Clean numbers, clear next steps</h3>
+        <p>We organise your books, lodge what's due, and surface the decisions that matter. You hear from us in plain English.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">03 — Stay ahead</div>
+        <h3>Quarterly check-ins, year-round support</h3>
+        <p>No more end-of-year scrambles. We keep an eye on the calendar so you can keep your eye on the work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+<section class="section section--paper2" id="services" aria-labelledby="services-h">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Services</span>
+      <h2 id="services-h">Everything you'd expect from a tax agent — and the bits you didn't know to ask for.</h2>
+    </div>
+    <div class="services__grid" data-reveal-children>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span>
+        <h3>Individual & Business Tax Returns</h3>
+        <p>Personal, sole trader, partnership, company, trust. Maximum accuracy, no missed deductions.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+        <h3>BAS Preparation & Lodgement</h3>
+        <p>On-time BAS, IAS, and PAYG. We catch the things that get expensive when missed.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-7.6-4.7L3 21l1.7-1.9A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+        <h3>Tax Consultations & Planning</h3>
+        <p>Got a tax question? Get a real answer. Pre-EOFY planning to minimise tax legally.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 16 4-4 4 3 5-6"/></svg></span>
+        <h3>Business Advisory & Consulting</h3>
+        <p>Strategic planning, process automation, risk management. We help you grow on purpose.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg></span>
+        <h3>Income, Profit & Management Reporting</h3>
+        <p>Monthly dashboards in plain English. Know your numbers without becoming an accountant.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v13H3z"/><path d="M8 7V4h8v3"/><path d="M3 12h18"/></svg></span>
+        <h3>Bookkeeping Services</h3>
+        <p>Accurate, automated bookkeeping with Xero or MYOB. Catch-up jobs welcome — no judgement.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 8-8v8z"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3>ABN, TFN & Business Registrations</h3>
+        <p>Starting something new? We'll get you set up properly — ABN, TFN, GST, PAYG, the lot.</p>
+        <span class="more">Learn more →</span>
+      </article>
+      <article class="service">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6-6 6 6"/><path d="M6 15a6 6 0 0 0 12 0V6H6z"/></svg></span>
+        <h3>GST Registration & Advice</h3>
+        <p>When you need to register, when you don't, and how to stay compliant once you do.</p>
+        <span class="more">Learn more →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     AUDIENCES
+     ========================================================= -->
+<section class="section" id="audiences" aria-labelledby="aud-h">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Who we work with</span>
+      <h2 id="aud-h">Built for the way you actually work.</h2>
+    </div>
+    <div class="audiences__grid" data-reveal-children>
+      <article class="aud-tile aud-tile--feature">
+        <span class="aud-tile__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-7.6-4.7L3 21l1.7-1.9A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+        <span class="eyebrow on-dark">Client quote</span>
+        <p class="quote">"Tax stopped being a thing I dreaded the week before EOFY. It's just… handled now."</p>
+        <span class="attr">— A client, sole trader · placeholder</span>
+      </article>
+      <article class="aud-tile">
+        <span class="aud-tile__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+        <span class="eyebrow">Sole traders</span>
+        <h3>Freelancers, contractors, side hustles</h3>
+        <p>Quarterly BAS, deductions you didn't know you could claim, and a straight answer about whether to incorporate.</p>
+      </article>
+      <article class="aud-tile">
+        <span class="aud-tile__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M14 21a5 5 0 0 1 8-4"/></svg></span>
+        <span class="eyebrow">Families</span>
+        <h3>Personal returns and family tax planning</h3>
+        <p>One household, multiple incomes, kids, investments, super. We make it make sense without making it scary.</p>
+      </article>
+      <article class="aud-tile">
+        <span class="aud-tile__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h2M9 13h2M9 17h2M13 9h2M13 13h2M13 17h2"/></svg></span>
+        <span class="eyebrow">Small business</span>
+        <h3>Growing teams, real numbers, calm books</h3>
+        <p>From your first hire to your first audit, we keep the back office quiet so the front office can move fast.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WHY US (manifesto)
+     ========================================================= -->
+<section class="section section--dark" id="why" aria-labelledby="why-h">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow on-dark">Why us</span>
+      <h2 id="why-h">No surprises. No jargon. <em style="font-style: normal; color: var(--accent-3)">No one chasing you</em> the week before EOFY.</h2>
+    </div>
+    <div class="whyus__statements" data-reveal-children>
+      <div class="statement">
+        <span class="statement__num">01</span>
+        <p class="statement__text">A registered tax agent who <em>actually picks up the phone</em>.</p>
+        <div class="statement__proof">
+          <span class="statement__proof-num">&lt; 24h</span>
+          <span class="statement__proof-label">Avg reply time</span>
+        </div>
+      </div>
+      <div class="statement">
+        <span class="statement__num">02</span>
+        <p class="statement__text">Plain English advice. Fixed prices you see <em>before you commit</em>.</p>
+        <div class="statement__proof">
+          <span class="statement__proof-num">$0</span>
+          <span class="statement__proof-label">Surprise fees</span>
+        </div>
+      </div>
+      <div class="statement">
+        <span class="statement__num">03</span>
+        <p class="statement__text">Remote or in-person — <em>your call</em>. We come to where you are.</p>
+        <div class="statement__proof">
+          <span class="statement__proof-num">100%</span>
+          <span class="statement__proof-label">Australia-wide</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TESTIMONIALS
+     ========================================================= -->
+<section class="section section--paper2" id="testimonials" aria-labelledby="testi-h">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">What clients say</span>
+      <h2 id="testi-h">A few words from people we've helped.</h2>
+    </div>
+    <div class="testi__grid" data-reveal-children>
+      <article class="testi">
+        <span class="testi__placeholder">Placeholder</span>
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__quote">"Switched to CB after years with a 'big' firm. The difference is night and day — I actually understand my own books now."</p>
+        <div class="testi__attr">
+          <span class="testi__avatar">SR</span>
+          <div class="testi__attr-info">
+            <strong>S. Reilly</strong>
+            <span>Sole trader · Brisbane</span>
+          </div>
+        </div>
+      </article>
+      <article class="testi">
+        <span class="testi__placeholder">Placeholder</span>
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__quote">"They lodged our BAS, fixed two years of bookkeeping mess, and didn't make us feel stupid for any of it. Worth every cent."</p>
+        <div class="testi__attr">
+          <span class="testi__avatar">MK</span>
+          <div class="testi__attr-info">
+            <strong>M. Kapoor</strong>
+            <span>Small business · Sydney</span>
+          </div>
+        </div>
+      </article>
+      <article class="testi">
+        <span class="testi__placeholder">Placeholder</span>
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__quote">"Honest, fast, no surprise fees. Replied to my emails within hours, not days. That's the bar now."</p>
+        <div class="testi__attr">
+          <span class="testi__avatar">JN</span>
+          <div class="testi__attr-info">
+            <strong>J. Nguyen</strong>
+            <span>Family client · Melbourne</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section class="section" id="about" aria-labelledby="about-h">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__portrait" data-reveal>
+        <div class="placeholder">Owner portrait<br>(to be supplied)</div>
+      </div>
+      <div data-reveal style="--reveal-delay: 150ms">
+        <span class="eyebrow">About CB Accountants</span>
+        <h2 id="about-h" style="margin-top: 18px; margin-bottom: 22px;">A practice built around the people, not the paperwork.</h2>
+        <p class="lead" style="margin-bottom: 18px;">CB Accountants was founded on a simple frustration: too many accountants treat their clients like file numbers. We do the opposite — we know your name, your situation, and what you're trying to build.</p>
+        <p style="color: var(--ink-2);">Whether you're lodging your first BAS or restructuring a growing business, you'll deal with the same registered tax agent every time. No call centres. No junior pass-throughs. Just direct, practical help from someone who's read your file.</p>
+        <div class="about__chips">
+          <span class="chip"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>Registered Tax Agent</span>
+          <span class="chip"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>IPA Member</span>
+          <span class="chip"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>Australia-wide</span>
+          <span class="chip"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>Remote + in-person</span>
+        </div>
+        <div class="about__signature">
+          <strong>— The CB team</strong>
+          <span>Tax Agent #26303323 · placeholder until owner-confirmed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     INSIGHTS
+     ========================================================= -->
+<section class="section section--paper2" id="insights" aria-labelledby="insights-h">
+  <div class="container">
+    <div class="insights__head" data-reveal>
+      <div class="section__head">
+        <span class="eyebrow">Insights</span>
+        <h2 id="insights-h">Tax, in plain English.</h2>
+        <p class="lead">Notes, deadlines, and straight answers — no jargon.</p>
+      </div>
+      <a href="#" class="insights__viewall">All insights <span class="arrow">→</span></a>
+    </div>
+    <div class="insights__grid" data-reveal-children>
+      <a href="#" class="article-card article-card--featured">
+        <span class="article-card__placeholder">Placeholder</span>
+        <div class="article-card__meta">
+          <span class="article-card__tag">Featured · Tax</span>
+          <span>26 May 2026 · 4 min read</span>
+        </div>
+        <h3>EOFY 2026: seven deductions sole traders forget to claim.</h3>
+        <p class="article-card__excerpt">A working-from-home setup, the laptop you bought in March, super top-ups — most sole traders leave hundreds on the table every year. Here's the shortlist.</p>
+        <span class="article-card__more">Read article <span class="arrow">→</span></span>
+      </a>
+      <a href="#" class="article-card">
+        <span class="article-card__placeholder">Placeholder</span>
+        <div class="article-card__meta">
+          <span class="article-card__tag">BAS</span>
+          <span>18 May 2026 · 3 min read</span>
+        </div>
+        <h3>BAS lodgement: the calendar every small business should pin up.</h3>
+        <p class="article-card__excerpt">Quarterly due dates, monthly variations, and the one extension nobody seems to know about. Print this, stick it on the fridge.</p>
+        <span class="article-card__more">Read article <span class="arrow">→</span></span>
+      </a>
+      <a href="#" class="article-card">
+        <span class="article-card__placeholder">Placeholder</span>
+        <div class="article-card__meta">
+          <span class="article-card__tag">Business</span>
+          <span>9 May 2026 · 6 min read</span>
+        </div>
+        <h3>Should you incorporate? A straight-answer guide for growing sole traders.</h3>
+        <p class="article-card__excerpt">When a Pty Ltd actually saves you money, when it just adds paperwork, and the income threshold most accountants won't tell you about.</p>
+        <span class="article-card__more">Read article <span class="arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+<section class="final-cta" id="contact" aria-labelledby="cta-h">
+  <div class="final-cta__inner">
+    <h2 id="cta-h" data-reveal>Ready when you are.</h2>
+    <p class="lead" data-reveal style="--reveal-delay: 120ms">Free 15-minute initial chat — no obligation, no script, no pressure. We'll either be a good fit or we'll point you to someone who is.</p>
+    <div class="final-cta__row" data-reveal style="--reveal-delay: 240ms">
+      <a href="book.html" class="btn btn-primary on-dark">Book a chat <span class="arrow">→</span></a>
+      <a href="tel:+61434223300" class="btn btn-ghost on-dark">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 0434 223 300
+      </a>
+    </div>
+    <p class="micro" data-reveal style="--reveal-delay: 360ms">We reply within 1 business day · Mon–Fri 9–5 AEST</p>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="cb-logo.png" alt="" width="40" height="40">
+          </span>
+          <span>CB Accountants</span>
+        </a>
+        <p>Your trusted accounting partner. Practical accounting, personal service, powerful results — for sole traders, families, and growing small businesses across Australia.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Tax returns</a></li>
+          <li><a href="#services">BAS lodgement</a></li>
+          <li><a href="#services">Bookkeeping</a></li>
+          <li><a href="#services">Business advisory</a></li>
+          <li><a href="#services">GST &amp; registrations</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+61434223300">0434 223 300</a></li>
+          <li><a href="mailto:admin@cbaccountants.com.au">admin@cbaccountants.com.au</a></li>
+          <li>Mon–Fri 9–5 AEST</li>
+          <li>Serving Australia-wide</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li>Tax Agent #26303323</li>
+          <li>IPA Member</li>
+          <li>ABN — to be confirmed</li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> CB Accountants. All rights reserved.</span>
+      <span>Practical accounting. Personal service. Powerful results.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Sticky header scroll state */
+(() => {
+  const header = document.getElementById('header');
+  let ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        header.classList.toggle('is-scrolled', window.scrollY > 20);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+/* Mobile drawer */
+(() => {
+  const btn = document.getElementById('hamburger');
+  const drawer = document.getElementById('drawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+  let open = false;
+  function set(state) {
+    open = state;
+    document.body.classList.toggle('drawer-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    drawer.setAttribute('aria-hidden', String(!open));
+    backdrop.setAttribute('aria-hidden', String(!open));
+  }
+  btn.addEventListener('click', () => set(!open));
+  backdrop.addEventListener('click', () => set(false));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => set(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && open) set(false); });
+})();
+
+/* Reveal observer */
+(() => {
+  const els = document.querySelectorAll('[data-reveal], [data-reveal-children]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) {
+    els.forEach(el => el.classList.add('is-in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            e.target.classList.add('is-in');
+          }));
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+    els.forEach(el => io.observe(el));
+    setTimeout(() => els.forEach(el => el.classList.add('is-in')), 2500);
+  }
+})();
+
+/* Heading letter reveal */
+(() => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const headings = document.querySelectorAll('[data-h-reveal]');
+  headings.forEach(h => {
+    const text = h.textContent;
+    h.classList.add('h-reveal');
+    h.innerHTML = '';
+    const words = text.split(/\s+/);
+    words.forEach((word, wi) => {
+      const wEl = document.createElement('span');
+      wEl.className = 'word' + (wi === words.length - 1 ? ' is-last' : '');
+      [...word].forEach((ch, li) => {
+        const lEl = document.createElement('span');
+        lEl.className = 'letter';
+        lEl.style.transitionDelay = (wi * 60 + li * 28) + 'ms';
+        lEl.textContent = ch;
+        wEl.appendChild(lEl);
+      });
+      h.appendChild(wEl);
+    });
+    if (reduce) {
+      h.classList.add('is-in');
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+              h.classList.add('is-in');
+            }));
+            io.unobserve(h);
+          }
+        });
+      }, { rootMargin: '0px 0px -6% 0px', threshold: 0.1 });
+      io.observe(h);
+      setTimeout(() => h.classList.add('is-in'), 2500);
+    }
+  });
+})();
+
+document.getElementById('year').textContent = String(new Date().getFullYear());
+</script>
+
+</body>
+</html>

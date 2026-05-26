@@ -1,0 +1,22 @@
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Claude / tooling
+.claude/
+.playwright-mcp/
+
+# Local working files
+audit/
+previews/
+research/
+assets/
+source code for cbaaccountatns.html
+image.png
+
+# Logs
+*.log
+npm-debug.log*
